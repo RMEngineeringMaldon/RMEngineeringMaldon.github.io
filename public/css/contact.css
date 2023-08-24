@@ -1,0 +1,291 @@
+/*########################## CSS RESET ##########################*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ############################ FONTS ###########################*/
+@font-face{
+  font-family: Unna;
+  src: url(../fonts/CalibreWeb-Regular.woff2)
+}
+@font-face{
+  font-family: UnnaBold;
+  src: url(../fonts/CalibreWeb-Semibold.woff2)
+}
+
+/* ########################### NAV BAR ##########################*/
+.navBar {
+  list-style-type: none;
+  margin-right: 2px;
+  padding: 0;
+  overflow: hidden;
+
+}
+.navBarContents {
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  position: inherit;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 3px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold
+}
+li a:hover:not(.active) {
+  color: black;
+}
+li a:hover.active {
+  color: black;
+  border-bottom: 3px solid black;
+}
+li a.active {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+/* ########################### HEADER ###########################*/
+.header {
+    background: url("../img/contact\ background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    position: relative;
+    margin-top: 0px;
+}
+.contactHeader {
+    font-family: Courier;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titleLine {
+    max-width: 80px;
+    margin: 150px auto;
+    border-width: 3px;
+
+    border-color: black;
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+}
+.contact {
+    font-family: Courier;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (min-width:0px) {
+  .contactHeader {
+    font-size: 22px;
+  }
+  .contact {
+    font-size: 20px;
+  }
+  .navBarContents {
+    margin-top: 1px;
+    margin-right: 2px;
+  }
+  li a {
+    font-size: 10px;
+  }
+}
+@media (min-width:300px) {
+  .contactHeader {
+    font-size: 40px;
+  }
+  .contact {
+    font-size: 25px;
+  }
+  .navBarContents {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  li a {
+    font-size: 13px;
+  }
+}
+@media (min-width:700px) {
+  .contactHeader {
+    font-size: 50px;
+  }
+  .contact {
+    font-size: 30px
+  }
+  li a {
+    font-size: 20px;
+  }
+}
+@media (min-width:900px) {
+  .contactHeader {
+    font-size: 60px;
+  }
+  .contact {
+    font-size: 35px;
+  }
+}
+
+@media (min-width:1200px) {
+  .contactHeader {
+    font-size: 70px;
+  }
+  .contact {
+    font-size: 40px;
+  }
+}
+
+/* ########################### CONTENT ##########################*/
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+}
+/*Contact Us*/
+.contactUs {
+    width: 45%;
+    float: left;
+}
+.contactUsHeader {
+  font-family: UnnaBold;
+  font-weight: bold;
+  font-size: 30px;
+  color: Black;
+}
+.contactUsContent{
+  font-family: Unna;
+  font-size: 16px;
+  text-align: justify;
+}
+/*Find US*/
+.findUs {
+  width: 45%;
+  float: right;
+}
+.findUsHeader {
+  font-family: UnnaBold;
+  font-weight: bold;
+  font-size: 30px;
+  color: Black;
+}
+.findUsContent {
+  font-family: Unna;
+  font-size: 16px;
+  text-align: justify;
+}
+/*Form*/
+.formWrapper {
+  margin-right: 10%;
+}
+
+.formLabels {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: UnnaBold;
+  color: black;
+  text-align: left;
+}
+
+.standardInput {
+  border: none;
+  padding: 15px 20px;
+  margin: 10px 0px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(231, 231, 231);
+  font-family: Unna;
+}
+
+.messageInput {
+  border: none;
+  padding: 30px 20px;
+  margin: 10px 0px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(231, 231, 231);
+  font-family: Unna;
+  overflow-wrap: break-word;
+}
+
+.buttonInput {
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  width: auto;
+  display: inline-block;
+  background-color: rgb(231, 231, 231);
+  font-family: Unna;
+}
+/*Map*/
+.mapouter {
+  position:relative;
+  text-align:right;
+}
+#gmap_canvas {
+  margin-bottom: 10px;
+  overflow:hidden;
+  background:none!important;
+  height: 300px;
+  width:100%;
+  float: left;
+}
+@media (max-width:755px) {
+  .contactUs{
+    width: 100%;
+  }
+  .findUs{
+    float: none;
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 30px 0px 10px 0px;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>R.M. Engineering (Maldon) Ltd</title>
+        <link rel="stylesheet" href="css\contact.css">
+
+        <meta name="author" content="George Beckwith">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <!--HEADER-->
+        <div class="header">
+            <!--NAV BAR-->
+            <ul class="navBar">
+                <li class="navBarContents"><a class="active" href="contact.html">Contact</a></li>
+                <li class="navBarContents"><a href="../index.html">Home</a></li>
+            </ul>
+
+            <h1 class="contactHeader">R.M. ENGINEERING (MALDON) LTD</h1>
+            <hr class="titleLine">
+            <br>
+            <h2 class="contact">CONTACT</h2>
+        </div>
+
+        <!--CONTENT-->
+        <div class="container">
+            <!--CONTACT US-->
+            <div class="contactUs">
+                <p class="contactUsHeader">Contact Us</p>
+                <br>
+                <p class="contactUsContent">
+                    Tel: 01621 842845<br>
+                    Email: robert@rmengineering.co.uk<br>
+                </p>
+                <!--FORM-->
+                <br>
+                <div class="formWrapper">
+                    <form action="https://formspree.io/f/xdoranzp" method="POST"' id='contactform'>
+                    <input type="hidden" value="contactform" />
+                    <p>
+                        <label class="formLabels">First Name:</label>
+                        <input type='text' name='First Name' class="standardInput" placeholder="Your First Name.."/>
+                    </p>
+                    <p>
+                        <label class="formLabels">Surname:</label>
+                        <input type='text' name='Surname' class="standardInput" placeholder="Your Surname.."/>
+                    </p>
+                    <p>
+                        <label class="formLabels">Email Address:</label>
+                        <input type='text' name='Email' class="standardInput" placeholder="Your Email.."/>
+                    </p>
+                    <p>
+                        <label class="formLabels">Your message to us:</label>
+                        <input type='text' name='Message' class="messageInput" placeholder="Message.."/>
+                    </p>
+                    <input type='submit' class="buttonInput" value='Submit Form'/>
+                    </form>
+                    <br>
+                </div>    
+            </div>
+
+            <!--
+
+                <form
+                    action="https://formspree.io/f/xdoranzp"
+                    method="POST"
+                    >
+                    <label>
+                        Your email:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+
+            -->
+            <!--FIND US-->
+            <div class="findUs">
+                <p class="findUsHeader">Find Us</p>
+                <br>
+                <p class="findUsContent">
+                    Unit 3C Benbridge Industrial Estate<br>
+                    Heybridge, Maldon<br>
+                    Essex, CM9 4ER
+                </p>
+                <br>
+                <!--MAP-->
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Unit%203C%20Benbridge%20Industrial%20Estate%20Heybridge%2C%20Maldon%20Essex%2C%20CM9%204ER&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.bitgeeks.net/embed-google-map/"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="js/form.js"></script>
+    </footer>
+</html>
